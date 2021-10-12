@@ -1122,7 +1122,7 @@ body.lock {
 
     &__body {
         padding:50px 0px;
-        background: url('img/questions/phon.jpg') no-repeat;
+        background: url('/img/questions/phon.jpg') no-repeat;
         display: flex;
         justify-content: center;
     }
@@ -1223,4 +1223,124 @@ body.lock {
     }
     
     
+}
+
+//_____________________FOOTER___________________
+.footer {
+    // display: flex;
+    background: #1E2E36;
+    padding: 30px 0px 5px 0px;
+    &__top {
+        margin: 0px 0px 100px 0px;
+    }
+
+    &__logo {
+        display: flex;  
+        align-items: center;
+        margin: 0px 0px 20px 0px;
+    }
+
+    &__image {
+        margin: 0px 10px 0px 0px;
+    }
+
+    &__text {
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex: 1 0 33%;
+        padding:0px 20px;
+    }
+
+    
+    &__list > li {
+        position: relative;
+        margin: 0px 0px 10px 0px;
+    }
+
+    &__list > li >a {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 125%;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    &__list > li::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left:-20px;
+        width: 15px;
+        height: 2px;
+        border-top:2px solid #44C697;
+        
+    }
+    
+
+    &__item span{
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 125%;  
+
+        color: #FFFFFF;
+    }
+    &__column:nth-child(3) {
+        .footer__item{
+            margin:0px 0px 10px 0px;
+        }
+        .footer__item:nth-child(3) {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            .footer__text {
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 125%;
+    
+                    color: #44C697;
+                    margin: 0px 0px 5px 0px;
+                }
+            }
+            
+            
+        }
+        .footer__item:nth-child(4) {
+            margin:30px 0px 0px 0px;
+            .footer__icons {
+                margin: 10px 0px 0px 0px;
+            }
+            .footer__icons img{
+                margin: 0px 15px 0px 0px;
+            }
+            
+            
+        }
+
+        .footer__item img{
+            margin: 0px 10px 0px 0px;
+        }
+    }
+
+    &__icons {
+    }
+
+    &__bottom {
+        span {
+            font-size: 10px;
+            line-height: 120%;
+
+            color: #FFFFFF;
+        }
+    }
+}
+.container {
 }
